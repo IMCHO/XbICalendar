@@ -4,6 +4,7 @@
 
 #import "ical.h"
 @class XbICProperty;
+#import "Foundation/Foundation.h"
 
 @interface XbICComponent : NSObject
 

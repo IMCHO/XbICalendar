@@ -57,7 +57,9 @@ mkdir -p ../../lib
 mv -f $OUTPUT_DIR/ical.xcframework ../../lib
 mkdir -p ../../src/include
 cp  -f ./build/src/libical/ical.h ../../src/include
+cp  -f ./build/src/libical/ical.h ../../../XbICalendar/XBICalendar/include
 cp  -f ./src/libical/libical_ical_export.h ../../src/include
+cp  -f ./src/libical/libical_ical_export.h ../../../XbICalendar/XBICalendar/include
 rm -rf ../../zoneinfo
 mv  $OUTPUT_DIR/share/libical/zoneinfo ../../zoneinfo
 
