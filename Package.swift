@@ -17,7 +17,7 @@ let package = Package(
         // Targets can depend on other targets in this package and products from dependencies.
         .target(
             name: "XbICalendar",
-//            dependencies: ["ical"],
+            dependencies: ["ical"],
             path: "XbICalendar/XBICalendar",
             publicHeadersPath: "include"),
         .binaryTarget(name: "ical",
