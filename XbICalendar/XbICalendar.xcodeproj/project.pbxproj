@@ -40,6 +40,7 @@
 		946E26EC1B0F7B9600418534 /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 946E26EB1B0F7B9600418534 /* EventKit.framework */; };
 		946E26EE1B0F7BA500418534 /* EventKitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 946E26ED1B0F7BA500418534 /* EventKitUI.framework */; };
 		94B0AB131B05A1330057BF2D /* XbICPropertyTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 94B0AB121B05A1330057BF2D /* XbICPropertyTest.m */; };
+		CE131B2C2BF747C9004E57F8 /* libical.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F148A222194700DD00ED2C6E /* libical.a */; };
 		F113ED3419863A7B00C37F81 /* 2446.ics in Resources */ = {isa = PBXBuildFile; fileRef = 4DAE352A19720D050097A2D6 /* 2446.ics */; };
 		F113ED3519863A7F00C37F81 /* calendar.ics in Resources */ = {isa = PBXBuildFile; fileRef = 4DAE3531197370380097A2D6 /* calendar.ics */; };
 		F113ED3619863A8200C37F81 /* classify.ics in Resources */ = {isa = PBXBuildFile; fileRef = 4DAE3535197379190097A2D6 /* classify.ics */; };
@@ -211,6 +212,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE131B2C2BF747C9004E57F8 /* libical.a in Frameworks */,
 				F12F490F19332EA5003631C5 /* XCTest.framework in Frameworks */,
 				F12F491119332EA5003631C5 /* UIKit.framework in Frameworks */,
 				F12F491019332EA5003631C5 /* Foundation.framework in Frameworks */,
@@ -475,6 +477,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -714,7 +717,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "XbICalendarExample/XbICalendar-Prefix.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/XbICalendarExample/XbICalendar-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../libical/lib",
@@ -733,7 +736,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "XbICalendarExample/XbICalendar-Prefix.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/XbICalendarExample/XbICalendar-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../libical/lib",
@@ -761,6 +764,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = "XbICalendarTests/XbICalendarTests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -769,6 +773,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = XbICalendarTests/XbICalendarTestsBridge.h;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -787,6 +792,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "XbICalendarExample/XbICalendar-Prefix.pch";
 				INFOPLIST_FILE = "XbICalendarTests/XbICalendarTests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -794,6 +800,7 @@
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = XbICalendarTests/XbICalendarTestsBridge.h;
+				SWIFT_VERSION = 5.0;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
